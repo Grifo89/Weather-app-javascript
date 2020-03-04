@@ -1,0 +1,18 @@
+@import 'components/loader/loader';
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+  form {
+    width: 40%;
+    margin: 0 auto
+  }
+  .card-container {
+    width: 40%;
+    margin: 0 auto;
+    .card {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
