@@ -1,19 +1,18 @@
 import Helpers from './helpers';
 import fetch from './fetch';
-import CardHelpers from '../components/card/card'
+import CardHelpers from '../components/card/card';
 
 
-(function() {
-  'use strict';
-  let input = document.querySelector('#city')
-  let button = document.querySelector('button')
+(function () {
+  const input = document.querySelector('#city');
+  const button = document.querySelector('button');
 
   button.addEventListener('click', (e) => {
-    if (input.value != '') {
-      Helpers.showLoader()
-      fetch(input.value).then(data =>  {
-        input.value = ""
-        Helpers.hideLoader()
+    if (input.value !== '') {
+      Helpers.showLoader();
+      fetch(input.value).then((data) => {
+        input.value = '';
+        Helpers.hideLoader();
         const processData = {
           country: data.sys.country,
           city: data.name,
@@ -23,13 +22,11 @@ import CardHelpers from '../components/card/card'
           pressure: data.main.pressure,
           sunset: data.sys.sunset,
           sunrise: data.sys.sunrise,
-          windSpeed: data.wind.speed
-        }
-        console.log(data);
-        CardHelpers.append(processData)
-      })
-      e.preventDefault()
+          windSpeed: data.wind.speed,
+        };
+        CardHelpers.append(processData);
+      });
+      e.preventDefault();
     }
-  }, false)
-
+  }, false);
 }());

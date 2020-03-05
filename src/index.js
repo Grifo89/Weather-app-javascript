@@ -1,4 +1,2 @@
-import  './style.scss'
-import fetch from './helpers/fetch'
-import Helpers from './helpers/helpers'
-import logic from './helpers/logic'
+import './style.scss';
+import logic from './helpers/logic';
