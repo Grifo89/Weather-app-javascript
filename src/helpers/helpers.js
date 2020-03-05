@@ -1,16 +1,5 @@
 const Helpers = (function() {
   'use strict';
-  function createElement(type) {
-    return document.createElement(type);
-  }
-
-  function addClass(element, className) {
-    element.addClass.add(className);
-  }
-
-  function append(parent, element) {
-    parent.appendChild(element)
-  }
 
   function convetUnixTime(unixTime) {
     // Create a new javascript Date object base on the timestamp
@@ -43,9 +32,6 @@ const Helpers = (function() {
   }
 
   return {
-    createElement,
-    addClass,
-    append,
     convetUnixTime,
     hideLoader,
     showLoader
