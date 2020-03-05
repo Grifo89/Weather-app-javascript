@@ -28,7 +28,7 @@ Windows/ Mac
 Clone project and run
 `npm install`
 
-You need to create a file `.env` with your own openweathermap.org API_KEY
+You need to create a file `.env` with your own openweathermap.org api key
 `API_KEY = YOUR_API_KEY`
 
 ## How to contribute and partipate
