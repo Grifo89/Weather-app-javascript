@@ -17,6 +17,7 @@
     "rules": {
       "no-unused-vars": "off",
       "consistent-return": "off",
-      "func-names": "off"
+      "func-names": "off",
+      "no-console": "off"
     }
 }
