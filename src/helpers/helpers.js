@@ -1,7 +1,7 @@
 const Helpers = (function() {
   'use strict';
 
-  function convetUnixTime(unixTime) {
+  function convertUnixTime(unixTime) {
     // Create a new javascript Date object base on the timestamp
     // mutiplied by 100 so that the argument is in milliseconds
     let date  = new Date(unixTime * 1000);
@@ -22,17 +22,17 @@ const Helpers = (function() {
   }
 
   function hideLoader() {
-    document.querySelector("loader").style.display = "none"
-    document.querySelector("card").style.display = "block"
+    document.querySelector(".loader").style.display = "none"
+    document.querySelector(".card").style.display = "block"
   }
 
   function showLoader() {
-    document.querySelector("loader").style.display = "block"
-    document.querySelector("card").style.display = "hide"
+    document.querySelector(".loader").style.display = "block"
+    document.querySelector(".card").style.display = "none"
   }
 
   return {
-    convetUnixTime,
+    convertUnixTime,
     hideLoader,
     showLoader
   }
