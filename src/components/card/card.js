@@ -51,7 +51,7 @@ const CardHelpers = (function a() {
 
     country.textContent = object.country;
     city.textContent = object.city;
-    temp.textContent = `${object.temp}°C`;
+    temp.textContent = `${object.temp}°`;
     description.textContent = `Description: ${object.description}`;
     humidity.textContent = `${object.humidity}%`;
     pressure.textContent = `${object.pressure} hPa`;
@@ -61,6 +61,7 @@ const CardHelpers = (function a() {
 
     icon.src = iconSrc(sunrise, object.description);
   }
+
 
   return {
     iconSrc,
