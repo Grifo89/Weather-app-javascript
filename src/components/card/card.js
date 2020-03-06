@@ -35,7 +35,7 @@ const CardHelpers = (function a() {
 
   function isSunrise(sunriseStamp, sunsetStamp) {
     const currentHour = new Date().getHours();
-    return !!(Helpers.convertUnixTime(sunriseStamp).hours <= currentHour
+    return !(Helpers.convertUnixTime(sunriseStamp).hours <= currentHour
       && currentHour < Helpers.convertUnixTime(sunsetStamp));
   }
 
