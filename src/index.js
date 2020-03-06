@@ -1,2 +1,3 @@
+/* eslint-disable */
 import './style.scss';
-import logic from './helpers/logic';
+import Logic from './helpers/logic';

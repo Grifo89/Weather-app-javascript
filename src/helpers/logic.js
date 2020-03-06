@@ -3,7 +3,7 @@ import fetch from './fetch';
 import CardHelpers from '../components/card/card';
 
 
-(function () {
+(function c() {
   const input = document.querySelector('#city');
   const button = document.querySelector('button');
 

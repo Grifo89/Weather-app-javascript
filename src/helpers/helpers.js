@@ -1,4 +1,4 @@
-const Helpers = (function () {
+const Helpers = (function b() {
   function convertUnixTime(unixTime) {
     // Create a new javascript Date object base on the timestamp
     // mutiplied by 100 so that the argument is in milliseconds

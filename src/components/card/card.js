@@ -1,6 +1,6 @@
 import Helpers from '../../helpers/helpers';
 
-const CardHelpers = (function () {
+const CardHelpers = (function a() {
   function iconSrc(sunRise, description) {
     let src = './icons/cloudy.svg';
     if (sunRise) {
