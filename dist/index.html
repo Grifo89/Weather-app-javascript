@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script defer src="bundle.js" charset="utf-8"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" onSubmit="return false;">
+        <label for="city">Enter the city</label>
+        <input type="text" id="city">
+        <button type="button">Search</button>
+      </form>
+      <div class="toggle">
+        <button type="button" class="celsius">°C</button>
+        <button type="button" class=" fahrenheit">°F</button>
+      </div>
+      <div class="card-container">
+        <div class="loader">
+          <div class="roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </div>
+        <div class="card">
+          <h1 class="city">Brussels</h1><span class="country">,Belgium</span>
+          <div class="description">
+            <div class="main">
+              <img src="" alt="">
+              <h1>23grados</h1>
+              <p class="label">rainy</p>
+            </div>
+            <div class="table grid">
+              <span class="category">Humidity</span>
+              <span class="data humidity">Data</span>
+              <span class="category">Pressure</span>
+              <span class="data pressure">Data</span>
+              <span class="category">Wind</span>
+              <span class="data wind">Data</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
